@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PixelSortEffect : EffectBase {
+public class HSVSortEffect : EffectBase {
     [SerializeField] private ComputeShader cs;
     [SerializeField] private Texture2D tex;
     [SerializeField] private SortMode currentMode;
