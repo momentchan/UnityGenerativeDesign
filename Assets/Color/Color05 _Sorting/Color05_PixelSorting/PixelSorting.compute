@@ -1,0 +1,41 @@
+#pragma kernel Copy
+#pragma kernel Sort
+
+#include "../SortCommon.hlsl"
+
+float2 _Threshold;
+
+// white x
+int getFirstWhite(int x, int y, int w) {
+	for (; x < w; x++)
+		if (Luma(_Sort[uint2(x, y)].rgb) > _Threshold.x) break;
+	return x;
+}
+
+int getNextNonWhite(int x, int y, int w) {
+	x++;
+	for (; x < w; x++)
+		if (Luma(_Sort[uint2(x, y)].rgb) < _Threshold.y) break;
+	return x;
+}
+
+[numthreads(8, 1, 1)]
+void Sort(uint3 id : SV_DispatchThreadID)
+{
+	uint w, h;
+	_Sort.GetDimensions(w, h);
+
+	uint x = 0;
+	uint xEnd = 0;
+	uint y = id.x;
+
+	while (xEnd < w)
+	{
+		x = getFirstWhite(x, y, w);
+		if (x >= w) break;
+		xEnd = getNextNonWhite(x, y, w);
+
+		Sort(x, xEnd, y);
+		x = xEnd + 1;
+	}
+}

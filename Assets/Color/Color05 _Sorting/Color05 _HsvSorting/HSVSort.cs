@@ -1,21 +1,11 @@
 using mj.gist;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class HSVSortEffect : EffectBase {
-    [SerializeField] private ComputeShader cs;
-    [SerializeField] private Texture2D tex;
+public class HSVSort : SortEffect {
     [SerializeField] private SortMode currentMode;
-    [SerializeField] private RenderTexture result;
 
     protected override void Start() {
         base.Start();
-
-        result = new RenderTexture(tex.width, tex.height, 0, RenderTextureFormat.ARGB32);
-        result.enableRandomWrite = true;
-        result.Create();
-        mat.SetTexture("_Texture2D", result);
 
         UpdateTexture(SortMode.None);
     }
