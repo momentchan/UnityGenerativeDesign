@@ -5,6 +5,7 @@ using UnityEngine.VFX;
 
 public class PatternSizeEffect : VFXEffectBase {
     [SerializeField] private int colorCount = 20;
+    [SerializeField, Range(0, 1)] private float drawnProb = 1;
     [SerializeField] private Vector2 rowCounts = new Vector2(5, 40);
     [SerializeField] private List<TileData> tilesData;
 
@@ -60,7 +61,8 @@ public class PatternSizeEffect : VFXEffectBase {
                 tilesData.Add(new TileData() {
                     pos = new Vector2(sumOfPartsNow / sumOfPartsTotal, 1f * i / rowCount),
                     size = new Vector2(parts[j] / sumOfPartsTotal, 1f / rowCount),
-                    hsv = hsvs[index]
+                    hsv = hsvs[index],
+                    drawn = Random.value < drawnProb ? 1 : 0
                 });
                 sumOfPartsNow += parts[j];
                 counter++;
@@ -88,5 +90,6 @@ public class PatternSizeEffect : VFXEffectBase {
         public Vector2 pos;
         public Vector2 size;
         public Vector3 hsv;
+        public int drawn;
     }
 }
