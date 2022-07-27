@@ -5,16 +5,15 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class PatternEffect : MonoBehaviour {
+public class PatternColorEffect : VFXEffectBase {
     [SerializeField] private int currnetMode = 0;
 
     [SerializeField] private int tilesCountX = 50;
 
     private GraphicsBuffer hsvBuffer;
-    private VisualEffect graph;
 
-    void Start() {
-        graph = GetComponent<VisualEffect>();
+    protected override void Start() {
+        base.Start();
         hsvBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured, tilesCountX, Marshal.SizeOf(typeof(HsvData)));
         hsvBuffer.SetData(Enumerable.Range(0, tilesCountX).Select(i => new Vector3(Random.value, Random.value, Random.value)).ToArray());
         graph.SetGraphicsBuffer("HsvBuffer", hsvBuffer);
