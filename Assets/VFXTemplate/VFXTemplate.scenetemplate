@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Template
+  m_Name: VFXTemplate
   m_EditorClassIdentifier: 
-  templateScene: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+  templateScene: {fileID: 102900000, guid: e1d5abcce0d8ded4eae3e8f1ff07d2e4, type: 3}
   templateName: 
   description: 
   preview: {fileID: 0}
   dependencies:
-  - dependency: {fileID: 2100000, guid: 8713b74248724a94d8aeb415b29e1fc2, type: 2}
+  - dependency: {fileID: 2800000, guid: 127279d577f25ac4ea17dae3782e5074, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 8926484042661614526, guid: 5430714df760cf84187501260bac59d8, type: 3}
+    instantiationMode: 1
   templatePipeline: {fileID: 0}
   addToDefaults: 0
