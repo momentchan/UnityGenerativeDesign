@@ -4,3 +4,6 @@
 [submodule "Assets/Packages/unity-vfx-gist"]
 	path = Assets/Packages/unity-vfx-gist
 	url = https://github.com/momentchan/unity-vfx-gist.git
+[submodule "Assets/ScriptTemplates"]
+	path = Assets/ScriptTemplates
+	url = https://github.com/momentchan/unity-script-templates.git
