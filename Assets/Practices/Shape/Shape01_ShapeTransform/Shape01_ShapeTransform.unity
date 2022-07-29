@@ -235,9 +235,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawShader: {fileID: 4800000, guid: ff79ea7636e1ebd4880b961603e81749, type: 3}
+  rt: {fileID: 0}
   alpha: 0.2
   width: 0.005
-  inverse: 1
+  inverse: 0
+  colors:
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0.5119998, b: 0.64, a: 0}
+  - {r: 0.71, g: 0.6153333, b: 0, a: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
