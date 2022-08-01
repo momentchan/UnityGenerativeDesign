@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 245085618}
   - component: {fileID: 245085621}
   - component: {fileID: 245085623}
+  - component: {fileID: 245085624}
   m_Layer: 0
   m_Name: VFX
   m_TagString: Untagged
@@ -216,14 +217,23 @@ VisualEffect:
         m_Name: Width
         m_Overridden: 1
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0, y: 0.1}
+        m_Name: Width
+        m_Overridden: 1
     m_Vector3f:
       m_Array:
-      - m_Value: {x: -0.28234014, y: 0.6453488, z: 0.00000047683716}
+      - m_Value: {x: -0.18791112, y: 0.6258223, z: 0.00000047683716}
         m_Name: MouseWorldPos
         m_Overridden: 1
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 1, y: 1, z: 1, w: 0.81960785}
+        m_Name: Color1
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 1, z: 1, w: 0.5019608}
+        m_Name: Color2
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -296,6 +306,18 @@ MonoBehaviour:
   mouseWorldProperty:
     m_Name: MouseWorldPos
   depth: 5
+--- !u!114 &245085624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245085617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9525bc955cfdaf14d9c4cc2b29a76076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
