@@ -192,7 +192,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245085617}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 23548d268e9b27843a04b1c07afd322a, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: de668e06ff3ad7346a2b0045012d17e5, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -213,25 +213,22 @@ VisualEffect:
       - m_Value: 10
         m_Name: TilesCountY
         m_Overridden: 1
-      - m_Value: 0.01
-        m_Name: Width
-        m_Overridden: 1
     m_Vector2f:
-      m_Array:
-      - m_Value: {x: 0, y: 0.1}
-        m_Name: Width
-        m_Overridden: 1
+      m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: -0.18791112, y: 0.6258223, z: 0.00000047683716}
+      - m_Value: {x: -1.6109123, y: 0.41547412, z: 0.00000047683716}
         m_Name: MouseWorldPos
+        m_Overridden: 1
+      - m_Value: {x: -1.1109123, y: 0.9154741, z: 5}
+        m_Name: MouseViewPos
         m_Overridden: 1
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 1, y: 1, z: 1, w: 0.81960785}
+      - m_Value: {x: 0.3702385, y: 0.7684192, z: 0.9433962, w: 0.7921569}
         m_Name: Color1
         m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1, w: 0.5019608}
+      - m_Value: {x: 0.3312923, y: 0.9339623, z: 0.9281827, w: 0.5019608}
         m_Name: Color2
         m_Overridden: 1
     m_Uint:
@@ -249,6 +246,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 50
         m_Name: TilesCountX
+        m_Overridden: 1
+      - m_Value: 40
+        m_Name: TilesCount
         m_Overridden: 1
     m_Matrix4x4f:
       m_Array: []
@@ -305,6 +305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseWorldProperty:
     m_Name: MouseWorldPos
+  mouseViewportProperty:
+    m_Name: MouseViewPos
   depth: 5
 --- !u!114 &245085624
 MonoBehaviour:
@@ -416,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clearColorMode: 1
-  backgroundColorHDR: {r: 0, g: 0, b: 0, a: 0}
+  backgroundColorHDR: {r: 1, g: 1, b: 1, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
