@@ -13,13 +13,11 @@ public class AlignFacingEffect : VFXEffectBase {
     private float size = 0.1f;
 
     private void Update() {
-        if (Input.GetMouseButtonDown(0)) {
-            currentSprite = (++currentSprite) % sprites.Count;
-            var sprite = sprites[currentSprite];
-            graph.SetTexture("Texture", sprite.texture);
-            graph.SetVector2("TextureSize", new Vector2(sprite.texture.width / 256f, sprite.texture.height / 256f));
-            graph.SetVector3("PosOffset", sprite.posOffset);
-        }
+        if (Input.GetMouseButtonDown(0))
+            SwitchSprite(1);
+
+        if (Input.GetMouseButtonDown(1))
+            SwitchSprite(-1);
 
         if (Input.GetKey(KeyCode.DownArrow))
             size = Mathf.Clamp(size - 1e-3f, sizeRange.x, sizeRange.y);
@@ -45,6 +43,14 @@ public class AlignFacingEffect : VFXEffectBase {
 
         graph.SetFloat("Size", size);
         graph.SetFloat("AngleOffset", angleOffset);
+    }
+
+    private void SwitchSprite(int offset) {
+        currentSprite = (currentSprite + offset + sprites.Count) % sprites.Count;
+        var sprite = sprites[currentSprite];
+        graph.SetTexture("Texture", sprite.texture);
+        graph.SetVector2("TextureSize", new Vector2(sprite.texture.width / 256f, sprite.texture.height / 256f));
+        graph.SetVector3("PosOffset", sprite.posOffset);
     }
 
     public enum SizeMode { Default, Ascent, Descent}
