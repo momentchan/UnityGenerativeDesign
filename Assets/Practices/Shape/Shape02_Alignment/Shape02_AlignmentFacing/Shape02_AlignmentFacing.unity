@@ -220,7 +220,7 @@ VisualEffect:
       - m_Value: {x: -0.1977239, y: 0.6642959, z: 0.00000047683716}
         m_Name: MouseWorldPos
         m_Overridden: 1
-      - m_Value: {x: -0.9747009, y: -0.19779211, z: 5}
+      - m_Value: {x: 0.17567566, y: 1.1491892, z: 5}
         m_Name: MouseViewPos
         m_Overridden: 1
     m_Vector4f:
@@ -317,18 +317,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e213e594b737c45a970d15cffbc5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0.1
+  sizeRange: {x: 0.05, y: 0.2}
   angleOffset: 0
   sizeMode: 0
   colorMode: 0
-  textures:
-  - {fileID: 6192944022281365145, guid: 3e5fc889da7ff984f920fbe3bffe63bd, type: 3}
-  - {fileID: 6192944022281365145, guid: 1e47bbe781d58b245b2d3b3ad32ee6f8, type: 3}
-  - {fileID: 6192944022281365145, guid: b01f5821fe54d3d428a107ca0ddbee4c, type: 3}
-  - {fileID: 6192944022281365145, guid: 049cf0803d0e45c4cb324abdac0746f4, type: 3}
-  - {fileID: 6192944022281365145, guid: b306525b0c3262c47ba5f8f3f77d6bd2, type: 3}
-  - {fileID: 6192944022281365145, guid: 528f0d6d4d7e4a0408d4248da64bebe0, type: 3}
-  - {fileID: 6192944022281365145, guid: 0cc29f6b00be98e48bcde4bd08826ab9, type: 3}
+  sprites:
+  - posOffset: {x: -0.02, y: 1.02, z: 0}
+    texture: {fileID: 6192944022281365145, guid: 3e5fc889da7ff984f920fbe3bffe63bd, type: 3}
+  - posOffset: {x: 0.02, y: 0.71, z: 0}
+    texture: {fileID: 6192944022281365145, guid: 1e47bbe781d58b245b2d3b3ad32ee6f8, type: 3}
+  - posOffset: {x: 0.42, y: 0.58, z: 0}
+    texture: {fileID: 6192944022281365145, guid: b01f5821fe54d3d428a107ca0ddbee4c, type: 3}
+  - posOffset: {x: -2.07, y: 0.82, z: 0}
+    texture: {fileID: 6192944022281365145, guid: 049cf0803d0e45c4cb324abdac0746f4, type: 3}
+  - posOffset: {x: 0.5, y: 0.5, z: 0}
+    texture: {fileID: 6192944022281365145, guid: b306525b0c3262c47ba5f8f3f77d6bd2, type: 3}
+  - posOffset: {x: 0.5, y: 0.5, z: 0}
+    texture: {fileID: 6192944022281365145, guid: 528f0d6d4d7e4a0408d4248da64bebe0, type: 3}
+  - posOffset: {x: 0.5, y: 0.5, z: 0}
+    texture: {fileID: 6192944022281365145, guid: 0cc29f6b00be98e48bcde4bd08826ab9, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
