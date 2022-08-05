@@ -191,7 +191,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245085617}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 30394dc2d31d69047825eb4eefeacaed, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: f850c5a1de9e91e4ba3d2244082665c0, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -212,12 +212,21 @@ VisualEffect:
       - m_Value: 10
         m_Name: TilesCountY
         m_Overridden: 1
+      - m_Value: 0.05
+        m_Name: Strength
+        m_Overridden: 1
+      - m_Value: 0.08
+        m_Name: MaxSize
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
       m_Array:
       - m_Value: {x: -0.1977239, y: 0.6642959, z: 0.00000047683716}
         m_Name: MouseWorldPos
+        m_Overridden: 1
+      - m_Value: {x: 0.32305083, y: 1.1003389, z: 5}
+        m_Name: MouseViewPos
         m_Overridden: 1
     m_Vector4f:
       m_Array: []
@@ -393,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clearColorMode: 1
-  backgroundColorHDR: {r: 0, g: 0, b: 0, a: 0}
+  backgroundColorHDR: {r: 1, g: 1, b: 1, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
