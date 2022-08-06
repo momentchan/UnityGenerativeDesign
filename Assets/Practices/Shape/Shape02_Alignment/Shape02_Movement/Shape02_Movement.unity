@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 245085618}
   - component: {fileID: 245085621}
   - component: {fileID: 245085623}
+  - component: {fileID: 245085624}
   m_Layer: 0
   m_Name: VFX
   m_TagString: Untagged
@@ -225,7 +226,7 @@ VisualEffect:
       - m_Value: {x: -0.1977239, y: 0.6642959, z: 0.00000047683716}
         m_Name: MouseWorldPos
         m_Overridden: 1
-      - m_Value: {x: 0.32305083, y: 1.1003389, z: 5}
+      - m_Value: {x: 0.12110956, y: -0.65020293, z: 5}
         m_Name: MouseViewPos
         m_Overridden: 1
     m_Vector4f:
@@ -304,6 +305,18 @@ MonoBehaviour:
   mouseViewportProperty:
     m_Name: MouseViewPos
   depth: 5
+--- !u!114 &245085624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245085617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9525bc955cfdaf14d9c4cc2b29a76076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
