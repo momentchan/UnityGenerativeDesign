@@ -2521,7 +2521,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":1.0,"y":1.0,"z":1.0}'
+      m_SerializableObject: '{"x":0.07999999821186066,"y":-0.029999999329447748,"z":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Scale
@@ -3367,7 +3367,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 68, y: 1536}
+  m_UIPosition: {x: 66, y: 1538}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
