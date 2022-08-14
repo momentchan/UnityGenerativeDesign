@@ -17,7 +17,7 @@ Shader "Hidden/Draw"
 			#pragma fragment frag
 
 			#include "UnityCG.cginc"
-			#include "Assets/Packages/unity-gist/Cginc/RotationUtil.cginc"
+			#include "Assets/Packages/unity-gist/Cginc/Rotation.cginc"
 			#include "Assets/Packages/unity-gist/Cginc/Shape.cginc"
 
 			sampler2D _MainTex;
