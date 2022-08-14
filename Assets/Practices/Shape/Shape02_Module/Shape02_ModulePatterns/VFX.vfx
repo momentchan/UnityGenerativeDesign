@@ -7595,7 +7595,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615613}
   m_ExposedName: Pattern
   m_Exposed: 1
-  m_Order: 4
+  m_Order: 3
   m_Category: 
   m_Min:
     m_Type:
