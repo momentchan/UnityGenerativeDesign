@@ -1,9 +1,7 @@
 #include "Assets/Packages/unity-gist/Cginc/Shape.cginc"
 
-
 void DrawPattern_float(float2 UV, float Count, float Width, float2 Offset, float Pattern, out float Out) {
 	Out = 0;
-	Offset.x = 1 - Offset.x;
 	if (Pattern == 0) {
 		float2 center = Offset;
 		for (uint i = 0; i < Count; i++) {
